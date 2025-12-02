@@ -1,5 +1,10 @@
-extends Sprite2D
+extends Area2D
 
+var health := 10
+
+func set_health(new_health: int) -> void:
+	health =  new_health
+	get_node("UI/HealthBar").value = health
 
 var max_speed := 1200.0
 var velocity := Vector2(0, 0)
@@ -20,4 +25,10 @@ func _process(delta: float) -> void:
 	position += velocity * delta
 
 	if velocity.length() > 0.0:
-		rotation = velocity.angle()
+		get_node("Sprite2D").rotation = velocity.angle()
+
+func _ready() -> void:
+	area_entered.connect(_on_area_entered)
+	
+func _on_area_entered(area_that_entered: Area2D) -> void:
+	set_health(health + 20) 
