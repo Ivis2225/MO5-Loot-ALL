@@ -31,4 +31,4 @@ position = Vector2(698, 693)
 position = Vector2(1047, 516)
 
 [node name="Gem3" parent="." instance=ExtResource("4_4rc43")]
-position = Vector2(1017, 698)
+position = Vector2(1017, 695)
