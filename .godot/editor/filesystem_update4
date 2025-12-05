@@ -3,3 +3,4 @@ res://addons/gdpractice/assets/theme.tres
 res://assets/ship_visual_effects/main_thruster/thruster_material.tres
 res://assets/background/space_material.tres
 res://lessons/random_item_placer.gd
+res://lessons/space_level.tscn
