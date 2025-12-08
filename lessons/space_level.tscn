@@ -1,14 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://btkjymc78ap8d"]
+[gd_scene load_steps=6 format=3 uid="uid://btkjymc78ap8d"]
 
 [ext_resource type="PackedScene" uid="uid://dmv50krf4bo5r" path="res://lessons/ship.tscn" id="2_2j1u5"]
 [ext_resource type="PackedScene" uid="uid://bxfevggvxo634" path="res://assets/background/space_background.tscn" id="3_e6xy1"]
 [ext_resource type="PackedScene" uid="uid://b1yl6aosq3kty" path="res://random_item_placer.tscn" id="3_etm7e"]
+[ext_resource type="PackedScene" uid="uid://4clsvdvuyocx" path="res://lessons/gem.tscn" id="4_dru4e"]
+[ext_resource type="PackedScene" uid="uid://o1ca06m0k4bk" path="res://lessons/health_pack.tscn" id="5_kd2gs"]
 
 [node name="Level" type="Node2D"]
 
 [node name="SpaceBackground" parent="." instance=ExtResource("3_e6xy1")]
 
 [node name="Ship" parent="." instance=ExtResource("2_2j1u5")]
-position = Vector2(946, 546)
+position = Vector2(476, 253)
 
 [node name="RandomItemPlacer" parent="." instance=ExtResource("3_etm7e")]
+position = Vector2(-1, 0)
+
+[node name="Gem" parent="." instance=ExtResource("4_dru4e")]
+position = Vector2(643, 200)
+
+[node name="HeakthPack" parent="." instance=ExtResource("5_kd2gs")]
+position = Vector2(626, 212)
