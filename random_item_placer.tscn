@@ -7,5 +7,3 @@ script = ExtResource("1_1wax0")
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
-
-[node name="Camera2D" type="Camera2D" parent="."]
